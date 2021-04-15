@@ -1,0 +1,33 @@
+.slider {
+  width: 100%;
+}
+
+.slider input {
+  background: linear-gradient(
+    to right,
+    #f18729 0%,
+    #f18729 50%,
+    white 50%,
+    white 100%
+  );
+  border-radius: 8px;
+  height: 8px;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  transition: all 450ms ease-in;
+  -webkit-appearance: none;
+}
+
+.slider input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--orange-color);
+  box-shadow: 0px 10px 20px 0px var(--orange-color);
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+}
