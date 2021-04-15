@@ -4,7 +4,7 @@ let orders = document.getElementById("orders");
 
 let prices = [4, 3.5, 3, 2.5, 2];
 
-orders.innerHTML = "500";
+orders.innerHTML = "Do 500";
 
 const listener = function () {
   window.requestAnimationFrame(function () {
