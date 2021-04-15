@@ -249,6 +249,17 @@ body {
   margin-bottom: 0 !important;
 }
 
+.footer .custom-button {
+  background-image: none;
+  background-color: white;
+  color: var(--orange-color);
+}
+
+.footer .custom-button:hover {
+  color: var(--orange-color)!important;
+  text-decoration: none !important;
+}
+
 .contact-links-wrapper {
   display: flex;
 }

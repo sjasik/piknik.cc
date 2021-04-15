@@ -11,23 +11,23 @@ const listener = function () {
     switch (slider.value) {
       case "1":
         price.innerHTML = prices[0].toString().replace(".", ",");
-        orders.innerHTML = "100";
+        orders.innerHTML = "Do 100";
         break;
       case "2":
         price.innerHTML = prices[1].toString().replace(".", ",");
-        orders.innerHTML = "300";
+        orders.innerHTML = "Do 300";
         break;
       case "3":
         price.innerHTML = prices[2].toString().replace(".", ",");
-        orders.innerHTML = "500";
+        orders.innerHTML = "Do 500";
         break;
       case "4":
         price.innerHTML = prices[3].toString().replace(".", ",");
-        orders.innerHTML = "1000";
+        orders.innerHTML = "Do 1000";
         break;
       case "5":
         price.innerHTML = prices[4].toString().replace(".", ",");
-        orders.innerHTML = "1500+";
+        orders.innerHTML = "1000+";
     }
   });
 };
