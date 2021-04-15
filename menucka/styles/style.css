@@ -208,6 +208,35 @@ body {
   margin-top: 2rem;
 }
 
+.pricing {
+  background-color: var(--grey-light-color);
+}
+
+.pricing .quantity {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.pricing .commission {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+/* .pricing .commission:not(span) {
+  opacity: 0.75;
+} */
+
+.pricing .commission span.percentage {
+  line-height: initial;
+  color: var(--orange-color);
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 1 !important;
+  margin-right: 8px;
+}
+
 .footer {
   background: var(--orange-gradient);
 }
@@ -261,6 +290,11 @@ body {
 
   .agreements-link-mobile {
     display: block;
+  }
+
+  .pricing .jumbotron {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   .footer .jumbotron {

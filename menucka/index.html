@@ -11,6 +11,8 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="/menucka/styles/slider.css">
   <link rel="stylesheet" href="/menucka/styles/style.css" />
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
@@ -20,9 +22,20 @@
   <div id="mainwrapper">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand animate-nav" href="#">
-          <img src="/menucka/images/menucka-orange.svg" height="32" alt="Menucka.sk logo" />
-        </a>
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand mr-0 animate-nav d-none d-sm-inline-block" href="https://menucka.sk/" target="_blank"
+            rel="noopener noreferrer">
+            <img src="/menucka/images/menucka-orange.svg" height="32" alt="Menucka.sk logo" />
+          </a>
+          <a class="navbar-brand mr-0 animate-nav d-inline-block d-sm-none" href="https://menucka.sk/" target="_blank"
+            rel="noopener noreferrer">
+            <img src="https://menucka.sk/img/logo-menucka-xs.svg" height="36" alt="Menucka.sk logo" />
+          </a>
+          <span class="animate-nav mx-3 opacity-075">v spolupráci s</span>
+          <a class="navbar-brand pt-0 animate-nav" href="https://piknik.cc/" target="_blank" rel="noopener noreferrer">
+            <img src="/menucka/images/piknik-black.svg" height="24" alt="Piknik.cc logo" />
+          </a>
+        </div>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,17 +57,20 @@
               <a class="nav-link" href="#funkcie">Funkcie</a>
             </li>
             <li class="nav-item animate-nav">
+              <a class="nav-link" href="#ceny">Ceny</a>
+            </li>
+            <li class="nav-item animate-nav">
               <a class="nav-link" href="#ako-na-to">Ako na to?</a>
             </li>
             <li class="nav-item animate-nav">
               <a class="nav-link" href="#kontakt">Kontakt</a>
             </li>
           </ul>
-          <ul class="navbar-nav ml-auto">
+          <!-- <ul class="navbar-nav ml-auto">
             <li class="nav-item animate-nav">
               <a class="nav-link" href="https://my.piknik.cc" target="_blank" rel="noopener noreferrer">Prihlásiť sa</a>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </nav>
 
@@ -66,7 +82,7 @@
         </div>
         <div class="animate-hero-text">
           <p class="lead opacity-075">
-            Prijímajte objednávky priamo z portálu Menučka a vašej web stránky. Jednoducho. Bez investícíí.
+            Prijímajte objednávky priamo z portálu Menučka a vašej web stránky. Jednoducho. Bez investícií.
           </p>
         </div>
         <p class="lead mt-4 mb-5 animate-hero-text">
@@ -278,9 +294,39 @@
       </div>
     </div>
 
+    <div class="container-fluid pricing" style="margin-bottom: 2rem;">
+      <div class="container">
+        <div class="row">
+          <div class="jumbotron mb-0" style="padding: 4rem 2rem; width: 100%;">
+            <div class="col-12">
+              <h2 id="ceny" class="display-4 hero-heading">
+                Naše ceny
+              </h2>
+              <p class="lead opacity-075 mb-5">Žiadne skryté poplatky, platíte iba za potvrdené objednávky.
+              </p>
+            </div>
+            <div class="col-12">
+              <div class="d-flex align-items-center">
+                <div class="quantity opacity-075">
+                  <span id="orders"></span> Objednávok mesačne
+                </div>
+                <div class="commission ml-auto">
+                  <span class="percentage"><span id="price">3</span>%</span>
+                  <span class="opacity-075">provízia</span>
+                </div>
+              </div>
+              <div class="slider mt-2">
+                <input type="range" min="1" max="5" value="3" id="slider">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <div class="row">
-        <div class="jumbotron" style="padding-top: 0">
+        <div class="jumbotron">
           <div class="col-12">
             <h2 id="ako-na-to" class="display-4 hero-heading mb-5">
               Ako na to?
@@ -323,7 +369,8 @@
             </div>
             <div>
               <p class="lead opacity-075">
-                Odteraz možete prijímať objednávky priamo z portálu Menučka, prípadne aj z vášho webu. Nové objednávky dorazia
+                Odteraz možete prijímať objednávky priamo z portálu Menučka, prípadne aj z vášho webu. Nové objednávky
+                dorazia
                 do administratívneho panelu, odkiaľ ich môžete potvrdiť alebo zamietnuť. Potvrdenú objednávku vybavíte
                 štandardne, tak ako ste zvyknutí napr. pri telefonických objednávkach.
               </p>
@@ -467,6 +514,8 @@
         },
       });
     </script>
+
+    <script src="/menucka//js/slider.js"></script>
   </div>
 </body>
 
