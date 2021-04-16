@@ -4,26 +4,26 @@ let orders = document.getElementById("orders");
 
 let prices = [4, 3.5, 3, 2.5, 2];
 
-orders.innerHTML = "Do 500";
+orders.innerHTML = "Od 301 do 500";
 
 const listener = function () {
   window.requestAnimationFrame(function () {
     switch (slider.value) {
       case "1":
         price.innerHTML = prices[0].toString().replace(".", ",");
-        orders.innerHTML = "Do 100";
+        orders.innerHTML = "Od 1 do 100";
         break;
       case "2":
         price.innerHTML = prices[1].toString().replace(".", ",");
-        orders.innerHTML = "Do 300";
+        orders.innerHTML = "Od 101 do 300";
         break;
       case "3":
         price.innerHTML = prices[2].toString().replace(".", ",");
-        orders.innerHTML = "Do 500";
+        orders.innerHTML = "Od 301 do 500";
         break;
       case "4":
         price.innerHTML = prices[3].toString().replace(".", ",");
-        orders.innerHTML = "Do 1000";
+        orders.innerHTML = "Od 501 do 1000";
         break;
       case "5":
         price.innerHTML = prices[4].toString().replace(".", ",");
