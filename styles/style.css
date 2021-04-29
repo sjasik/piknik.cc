@@ -120,7 +120,7 @@ body {
   padding: 0.5rem 1.5rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 1rem;
+  border-radius: 2rem;
   color: #fff;
   background-color: #007bff;
   transition: ease 0.25s;
@@ -170,6 +170,35 @@ body {
   margin-top: 2rem;
 }
 
+.pricing .jumbotron {
+  width: 100%;
+}
+
+.pricing .quantity {
+  font-size: 1rem;
+  /* font-weight: bold; */
+  text-transform: uppercase;
+}
+
+.pricing .commission {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+}
+
+/* .pricing .commission:not(span) {
+  opacity: 0.75;
+} */
+
+.pricing .commission span.percentage {
+  line-height: initial;
+  color: #007bff;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 1 !important;
+  margin-right: 8px;
+}
+
 .footer {
   background-color: #15181b;
 }
@@ -198,7 +227,13 @@ body {
   display: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 992px) {
+  .navbar-collapse {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 576px) {
   .contact-links-wrapper {
     display: block;
   }
@@ -218,5 +253,13 @@ body {
   .footer .jumbotron {
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .display-5:not(.hero-heading) {
+    font-size: 1.75rem;
   }
 }
