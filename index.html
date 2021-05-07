@@ -19,7 +19,7 @@
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -93,7 +93,7 @@
         </div>
         <p class="lead mt-4 mb-5 animate-hero-text">
           <a class="custom-button" href="https://my.piknik.cc/register" target="_blank" rel="noopener noreferrer"
-            role="button">Zaregistrovať sa <span>></span><span>></span></a>
+            role="button" onclick="fbq('track', 'Lead');">Zaregistrovať sa <span>></span><span>></span></a>
         </p>
         <div class="card-deck">
           <div class="card animate-card">
@@ -421,7 +421,7 @@
           </div>
           <div class="mb-5">
             <a class="custom-button" href="https://my.piknik.cc/register" target="_blank" rel="noopener noreferrer"
-              role="button">Zaregistrovať sa <span>></span><span>></span></a>
+              role="button" onclick="fbq('track', 'Lead');">Zaregistrovať sa <span>></span><span>></span></a>
           </div>
           <a class="opacity-06 agreements-link-mobile mb-5" href="/vop">Obchodné podmienky</a>
           <img src="/images/piknik-logo-white.svg" width="72" alt="piknik.cc logo" />
