@@ -14,6 +14,7 @@
     if (/^sk\b/.test(browserLanguage)) language = "sk"
     else if (/^cs\b/.test(browserLanguage)) language = "cs"
 
+    if (language === "en") location = "/en"
     if (language === "cs") location = "/cs"
   </script>
 
@@ -251,7 +252,7 @@
                 <h5 class="card-title">Denné menu</h5>
                 <p class="card-text opacity-06">
                   Podporujeme objednávanie denného menu vo vopred určených
-                  dňoch a časoch
+                  dňoch a časoch.
                 </p>
               </div>
             </div>
@@ -462,6 +463,7 @@
             <select class="ml-4" id="lang-picker">
               <option id="sk" value="/sk" selected="selected">SK</option>
               <option id="cs" value="/cs">CS</option>
+              <option id="en" value="/en">EN</option>
             </select>
           </div>
         </div>
