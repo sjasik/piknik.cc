@@ -227,6 +227,16 @@ body {
   display: none;
 }
 
+select#lang-picker {
+  background: none;
+  color: white;
+  border: none;
+}
+
+select#lang-picker option {
+  color: #0e1012;
+}
+
 @media (max-width: 992px) {
   .navbar-collapse {
     margin-top: 8px;

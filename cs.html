@@ -1,21 +1,12 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="cs">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Online objednávkový systém pre reštaurácie</title>
-  <meta name="description" content="Príjmajte objednávky priamo z vašej webstránky. Jednoducho. Bez investícíí." />
+  <title>Online objednávkový systém pro restaurace</title>
+  <meta name="description" content="Přijímejte objednávky přímo z vaší webové stránky. Jednoduše. Bez investic." />
   <meta name="facebook-domain-verification" content="t66moan04xew5e6wea7holxi007w3n" />
-
-  <script>
-    const browserLanguage = window.navigator.language
-    let language = "en"
-    if (/^sk\b/.test(browserLanguage)) language = "sk"
-    else if (/^cs\b/.test(browserLanguage)) language = "cs"
-
-    if (language === "cs") location = "/cs"
-  </script>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
@@ -81,16 +72,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active animate-nav">
-              <a class="nav-link" href="#prehlad">Prehľad</a>
+              <a class="nav-link" href="#prehled">Přehled</a>
             </li>
             <li class="nav-item animate-nav">
-              <a class="nav-link" href="#funkcie">Funkcie</a>
+              <a class="nav-link" href="#funkce">Funkce</a>
             </li>
             <li class="nav-item animate-nav">
               <a class="nav-link" href="#ceny">Ceny</a>
             </li>
             <li class="nav-item animate-nav">
-              <a class="nav-link" href="#ako-na-to">Ako na to?</a>
+              <a class="nav-link" href="#jak-na-to">Jak na to?</a>
             </li>
             <li class="nav-item animate-nav">
               <a class="nav-link" href="#kontakt">Kontakt</a>
@@ -99,28 +90,27 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item animate-nav">
               <a class="nav-link" href="https://my.piknik.cc" target="_blank" rel="noopener"
-                onclick="gtag('event', 'dashboard_link_click');">Prihlásiť
-                sa</a>
+                onclick="gtag('event', 'dashboard_link_click');">Přihlásit se</a>
             </li>
           </ul>
         </div>
       </nav>
 
       <div class="jumbotron">
-        <div id="prehlad" class="animate-hero-text">
+        <div id="prehled" class="animate-hero-text">
           <h1 class="display-4 hero-heading" id="hero-heading">
-            Prijímajte objednávky priamo<br>z vašej webstránky
+            Přijímejte objednávky přímo<br>z vaší webstránky
           </h1>
         </div>
         <div class="animate-hero-text">
           <p class="lead opacity-06">
-            Posuňte svoju reštauráciu v online svete. Jednoducho. Bez investícií.
+            Posuňte svou restauraci v online světě. Jednoduše. Bez investic.
           </p>
         </div>
         <p class="lead mt-4 mb-5 animate-hero-text">
           <a class="custom-button" href="https://my.piknik.cc/register" target="_blank" rel="noopener" role="button"
-            onclick="fbq('track', 'Lead'); gtag('event', 'registration_cta_button_click');">Zaregistrovať
-            sa <span>></span><span>></span></a>
+            onclick="fbq('track', 'Lead'); gtag('event', 'registration_cta_button_click');">Zaregistrovat se
+            <span>></span><span>></span></a>
         </p>
         <div class="card-deck">
           <div class="card animate-card">
@@ -134,10 +124,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Zákazník zostáva u vás</h5>
+                <h5 class="card-title">Zákazník zůstává u vás</h5>
                 <p class="card-text opacity-06">
-                  Získajte nezávisloť od veľkých portálov a budujte svoju
-                  značku.
+                  Získejte nezávislost na velkých portálech a budujte svou značku.
                 </p>
               </div>
             </div>
@@ -153,9 +142,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Platíte len keď predávate</h5>
+                <h5 class="card-title">Platíte jen když prodáváte</h5>
                 <p class="card-text opacity-06">
-                  Nízka provízia z každej potvrdenej objednávky.
+                  Nízká provize z každé potvrzené objednávky.
                 </p>
               </div>
             </div>
@@ -171,10 +160,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Šetríte na IT nákladoch</h5>
+                <h5 class="card-title">Šetříte na IT nákladech</h5>
                 <p class="card-text opacity-06">
-                  Software nechajte na nás. Snažíme sa neustále zlepšovať a
-                  prinásať nové možnosti.
+                  Software nechte na nás. Snažíme se neustále zlepšovat a přinášet nové možnosti.
                 </p>
               </div>
             </div>
@@ -187,15 +175,15 @@
       <div class="row justify-content-center">
         <div class="col-lg-5 col-md-9">
           <img class="img-fluid safari animate-showcase" src="/images/showcase/dashboard.gif"
-            alt="Ovládací panel pre správu reštaurácie" />
+            alt="Ovládací panel pro správu restaurace" />
         </div>
         <div class="col-lg-2 col-md-3">
           <img class="img-fluid safari2 animate-showcase" src="/images/showcase/iphone.gif"
-            alt="UI online objednávania na mobilnom zariadení" />
+            alt="UI online objednávání na mobilním zařízení" />
         </div>
         <div class="col-lg-5 d-none d-lg-block">
           <img class="img-fluid safari3 animate-showcase" src="/images/showcase/desktop.png"
-            alt="UI online objednávania na desktop zariadení" />
+            alt="UI online objednávání na desktop zařízení" />
         </div>
       </div>
     </div>
@@ -203,19 +191,19 @@
     <div class="container showcase-wrapper d-md-none">
       <div class="row justify-content-center">
         <div class="col-9">
-          <img class="img-fluid safari2" src="/images/showcase/iphone.gif" alt="Ukážka online objednávania" />
+          <img class="img-fluid safari2" src="/images/showcase/iphone.gif" alt="Ukázka online objednávání" />
         </div>
       </div>
     </div>
 
     <div class="container">
       <div class="jumbotron features">
-        <div id="funkcie">
-          <h1 class="display-4 hero-heading">Máme to všetko...</h1>
+        <div id="funkce">
+          <h1 class="display-4 hero-heading">Máme to všechno...</h1>
         </div>
         <div>
           <p class="lead opacity-06 mb-5">
-            Všetko čo ako moderná reštaurácia potrebujete.
+            Vše co jako moderní restaurace potřebujete.
           </p>
         </div>
         <div class="card-deck">
@@ -232,7 +220,7 @@
               <div>
                 <h5 class="card-title">Online platby</h5>
                 <p class="card-text opacity-06">
-                  Umožnite zákazníkom platiť pohodlne online kartou.
+                  Umožněte zákazníkům platit pohodlně online kartou.
                 </p>
               </div>
             </div>
@@ -248,10 +236,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Denné menu</h5>
+                <h5 class="card-title">Denní menu</h5>
                 <p class="card-text opacity-06">
-                  Podporujeme objednávanie denného menu vo vopred určených
-                  dňoch a časoch
+                  Podporujeme objednávání denního menu v předem určených dnech a časech
                 </p>
               </div>
             </div>
@@ -267,9 +254,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Pokročilé možnosti jedál</h5>
+                <h5 class="card-title">Pokročilé možnosti jídel</h5>
                 <p class="card-text opacity-06">
-                  Vytvorte ponuku jedál bez obmedzení, presne ako potrebujete.
+                  Vytvořte nabídku jídel bez omezení, přesně jak potřebujete.
                 </p>
               </div>
             </div>
@@ -287,9 +274,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Donáška / takeaway / na mieste</h5>
+                <h5 class="card-title">Donáška / takeaway / na místě</h5>
                 <p class="card-text opacity-06">
-                  Po novom už aj bezkontaktné stolovanie načítaním QR kódu.
+                  Nově už i bezkontaktní stolování načtením QR kódu.
                 </p>
               </div>
             </div>
@@ -307,7 +294,7 @@
               <div>
                 <h5 class="card-title">Donáškové zóny</h5>
                 <p class="card-text opacity-06">
-                  Rozdielne ceny donášky? Na pár klikov.
+                  Rozdílné ceny donášky? Na pár kliků.
                 </p>
               </div>
             </div>
@@ -323,10 +310,10 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Prístup 24/7</h5>
+                <h5 class="card-title">Přístup 24/7</h5>
                 <p class="card-text opacity-06">
-                  Pridanie nového jedla o pol noci? ☑<br />
-                  Žiadne zbytočné schvalovanie...
+                  Přidání nového jídla o půl noci? ☑<br />
+                  Žádné zbytečné schvalování...
                 </p>
               </div>
             </div>
@@ -343,17 +330,17 @@
               Naše ceny
             </h2>
             <p class="lead opacity-06 mb-5">
-              Žiadne skryté poplatky, platíte iba za potvrdené objednávky.
+              Žádné skryté poplatky, platíte pouze za potvrzené objednávky.
             </p>
           </div>
           <div class="col-12">
             <div class="d-flex align-items-center">
               <div class="quantity">
-                <span id="orders"></span> Objednávok mesačne
+                <span id="orders"></span> Objednávek měsíčně
               </div>
               <div class="commission ml-auto">
                 <span class="percentage"><span id="price">3</span>%</span>
-                <span>provízia</span>
+                <span>provize</span>
               </div>
             </div>
             <div class="slider mt-2">
@@ -368,53 +355,47 @@
       <div class="row">
         <div class="jumbotron" style="padding-top: 0">
           <div class="col-12">
-            <h2 id="ako-na-to" class="display-4 hero-heading mb-5">
-              Ako na to?
+            <h2 id="jak-na-to" class="display-4 hero-heading mb-5">
+              Jak na to?
             </h2>
           </div>
           <div class="col-12 mb-4">
             <div>
               <h2 class="display-5">
-                <span style="color: #007bff">#1</span> Registrácia a
-                nastavenie
+                <span style="color: #007bff">#1</span> Registrace a nastavení
               </h2>
             </div>
             <div>
               <p class="lead opacity-06">
-                Prvým krokom je registrácia účtu a následné vytvorenie
-                reštaurácie. Taktiež vyplnenie potrebných informácií ako sú:
-                jedálny lístok, otváracie hodiny, adresa atď.
+                Prvním krokem je registrace účtu a následné vytvoření restaurace. Také vyplnění potřebných informací
+                jako jsou: jídelníček, otevírací hodiny, adresa,...
               </p>
             </div>
           </div>
           <div class="col-12 mt-2rem">
             <div>
               <h2 class="display-5">
-                <span style="color: #007bff">#2</span> Implementácia na vašom
-                webe (nepovinné)
+                <span style="color: #007bff">#2</span> Implementace na vašem webu (nepovinné)
               </h2>
             </div>
             <div>
               <p class="lead opacity-06">
-                V druhom kroku na vás čaká vloženie kódu na vašu existujúcu
-                stránku. V prípade, že svoj web nemáte, radi vám pomôžeme s
-                jeho tvorbou, alebo vám vytvoríme objednávaciu stránku na doméne nazovrestauracie.piknik.cc.
+                Ve druhém kroku na vás čeká vložení kódu na vaši stávající stránku. V případě, že svůj web nemáte, rádi
+                vám pomůžeme s jeho tvorbou nebo vám vytvoříme objednací stránku na doméně nazevrestaurace.piknik.cc.
               </p>
             </div>
           </div>
           <div class="col-12 mt-2rem">
             <div>
               <h2 class="display-5">
-                <span style="color: #007bff">#3</span> Hotovo, vitajte v online svete
+                <span style="color: #007bff">#3</span> Hotovo, vítejte v online světě
               </h2>
             </div>
             <div>
               <p class="lead opacity-06">
-                Odteraz možete prijímať objednávky priamo z vášho webu. Nové
-                objednávky dorazia do andministratívneho panelu, odkiaľ ich
-                môžete potvrdiť alebo zamietnuť. Potvrdenú objednávku vybavíte
-                štandartne, tak ako ste zvyknutý napr. pri telefonických
-                objednávkach.
+                Odteď můžete přijímat objednávky přímo z vašeho webu. Nové objednávky dorazí do andministrativního
+                panelu, odkud je můžete potvrdit nebo zamítnout. Potvrzenou objednávku vyřídíte standartně, tak jak jste
+                zvyklí např. při telefonických objednávkách.
               </p>
             </div>
           </div>
@@ -426,7 +407,7 @@
       <div class="container">
         <div class="jumbotron" style="padding: 4rem 2rem">
           <h2 id="kontakt" class="display-5 hero-heading">Kontakt</h2>
-          <p class="lead opacity-06">Kontaktujte nás, alebo sa priamo zaregistrujte a využite 10 € štartovací kredit.
+          <p class="lead opacity-06">Kontaktujte nás, nebo se přímo zaregistrujte a využijte 250 Kč. startovací kredit.
           </p>
           <div class="contact-links-wrapper mb-3">
             <div class="mr-3">
@@ -451,17 +432,17 @@
           </div>
           <div class="mb-5">
             <a class="custom-button" href="https://my.piknik.cc/register" target="_blank" rel="noopener" role="button"
-              onclick="fbq('track', 'Lead'); gtag('event', 'registration_cta_button_click');">Zaregistrovať sa
+              onclick="fbq('track', 'Lead'); gtag('event', 'registration_cta_button_click');">Zaregistrovat se
               <span>></span><span>></span></a>
           </div>
-          <a class="opacity-06 agreements-link-mobile mb-5" href="/vop">Obchodné podmienky</a>
+          <a class="opacity-06 agreements-link-mobile mb-5" href="/vop">Obchodní podmínky</a>
           <img src="/images/piknik-logo-white.svg" width="72" alt="piknik.cc logo" />
           <div style="float: right">
-            <a class="opacity-06 agreements-link" href="/vop">Obchodné podmienky</a>
+            <a class="opacity-06 agreements-link" href="/vop">Obchodní podmínky</a>
             <span class="opacity-06 ml-4">© 2022 Piknik</span>
             <select class="ml-4" id="lang-picker">
-              <option id="sk" value="/sk" selected="selected">SK</option>
-              <option id="cs" value="/cs">CS</option>
+              <option id="sk" value="/sk">SK</option>
+              <option id="cs" value="/cs" selected="selected">CS</option>
             </select>
           </div>
         </div>
