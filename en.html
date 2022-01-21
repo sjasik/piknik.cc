@@ -103,15 +103,21 @@
           </h1>
         </div>
         <div class="animate-hero-text">
-          <p class="lead opacity-06">
+          <p class="lead opacity-06 mb-0">
             Make your restaurant shine in online world. No headaches. No investments.
           </p>
         </div>
-        <p class="lead mt-4 mb-5 animate-hero-text">
-          <a class="custom-button" href="https://my.piknik.cc/register" target="_blank" rel="noopener" role="button"
-            onclick="fbq('track', 'Lead'); gtag('event', 'registration_cta_button_click');">Sign me up
+        <div class="custom-input-group mt-4 mb-5 animate-hero-text">
+          <input id="email-input" class="custom-input" type="email" placeholder="E-mailová adresa"
+            oninput="updateRegisterButtonHref()">
+          <a class="custom-button register-button d-none d-sm-flex" href="https://my.piknik.cc/register" target="_blank"
+            rel="noopener" role="button"
+            onclick="fbq('track', 'Lead'); gtag('event', 'registration_cta_button_click');">Sign up for free
             <span>></span><span>></span></a>
-        </p>
+          <a class="custom-button register-button d-sm-none text-nowrap" href="https://my.piknik.cc/register"
+            target="_blank" rel="noopener" role="button"
+            onclick="fbq('track', 'Lead'); gtag('event', 'registration_cta_button_click');">Sign up</a>
+        </div>
         <div class="card-deck">
           <div class="card animate-card">
             <div class="card-body">
@@ -142,7 +148,7 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">You only pay when you sell</h5>
+                <h5 class="card-title">Pay only when you sell</h5>
                 <p class="card-text opacity-06">
                   Low commission from each confirmed order.
                 </p>
@@ -160,7 +166,7 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">You save on IT costs</h5>
+                <h5 class="card-title">Save big on IT costs</h5>
                 <p class="card-text opacity-06">
                   Leave the software to us. We are constantly striving to improve and bring new features.
                 </p>
@@ -433,7 +439,7 @@
           </div>
           <div class="mb-5">
             <a class="custom-button" href="https://my.piknik.cc/register" target="_blank" rel="noopener" role="button"
-              onclick="fbq('track', 'Lead'); gtag('event', 'registration_cta_button_click');">Sign up
+              onclick="fbq('track', 'Lead'); gtag('event', 'registration_cta_button_click');">Sign up for free
               <span>></span><span>></span></a>
           </div>
           <a class="opacity-06 agreements-link-mobile mb-5" href="/vop">Business conditions</a>
@@ -550,6 +556,14 @@
       document.getElementById("lang-picker").addEventListener("change", function () {
         location = this.value;
       });
+
+      const updateRegisterButtonHref = () => {
+        const email = document.getElementById("email-input").value.trim();
+        const registerButtons = document.getElementsByClassName("register-button");
+        for (var i = 0; i < registerButtons.length; i++) {
+          registerButtons.item(i).href = `https://my.piknik.cc/register?email=${email}`;
+        }
+      }
     </script>
   </div>
 </body>

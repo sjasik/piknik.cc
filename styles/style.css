@@ -113,6 +113,33 @@ body {
   margin-right: 8px;
 }
 
+.custom-input-group {
+  width: auto;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 2rem;
+  color: #fff;
+  box-shadow:0px 0px 0px 1px rgba(255, 255, 255, 0.2) inset;
+  display: inline-flex;
+}
+
+.custom-input {
+  width: 200px;
+  color: white;
+  border: none;
+  background-color: transparent;
+  padding-left: 24px;
+  padding-right: 8px;
+}
+
+.custom-input:focus-visible {
+  border: none;
+  outline: none;
+}
+
 .custom-button {
   display: inline-block;
   text-align: center;
@@ -244,6 +271,10 @@ select#lang-picker option {
 }
 
 @media (max-width: 576px) {
+  .custom-input {
+    width: 100%;
+  }
+
   .contact-links-wrapper {
     display: block;
   }

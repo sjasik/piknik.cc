@@ -103,15 +103,21 @@
           </h1>
         </div>
         <div class="animate-hero-text">
-          <p class="lead opacity-06">
+          <p class="lead opacity-06 mb-0">
             Posuňte svou restauraci v online světě. Jednoduše. Bez investic.
           </p>
         </div>
-        <p class="lead mt-4 mb-5 animate-hero-text">
-          <a class="custom-button" href="https://my.piknik.cc/register" target="_blank" rel="noopener" role="button"
-            onclick="fbq('track', 'Lead'); gtag('event', 'registration_cta_button_click');">Zaregistrovat se
+        <div class="custom-input-group mt-4 mb-5 animate-hero-text">
+          <input id="email-input" class="custom-input" type="email" placeholder="E-mailová adresa"
+            oninput="updateRegisterButtonHref()">
+          <a class="custom-button register-button d-none d-sm-flex" href="https://my.piknik.cc/register" target="_blank"
+            rel="noopener" role="button"
+            onclick="fbq('track', 'Lead'); gtag('event', 'registration_cta_button_click');">Vyzkoušet zdarma
             <span>></span><span>></span></a>
-        </p>
+          <a class="custom-button register-button d-sm-none" href="https://my.piknik.cc/register" target="_blank"
+            rel="noopener" role="button"
+            onclick="fbq('track', 'Lead'); gtag('event', 'registration_cta_button_click');">Registrovat</a>
+        </div>
         <div class="card-deck">
           <div class="card animate-card">
             <div class="card-body">
@@ -432,7 +438,7 @@
           </div>
           <div class="mb-5">
             <a class="custom-button" href="https://my.piknik.cc/register" target="_blank" rel="noopener" role="button"
-              onclick="fbq('track', 'Lead'); gtag('event', 'registration_cta_button_click');">Zaregistrovat se
+              onclick="fbq('track', 'Lead'); gtag('event', 'registration_cta_button_click');">Vyzkoušet zdarma
               <span>></span><span>></span></a>
           </div>
           <a class="opacity-06 agreements-link-mobile mb-5" href="/vop">Obchodní podmínky</a>
@@ -549,6 +555,14 @@
       document.getElementById("lang-picker").addEventListener("change", function () {
         location = this.value;
       });
+
+      const updateRegisterButtonHref = () => {
+        const email = document.getElementById("email-input").value.trim();
+        const registerButtons = document.getElementsByClassName("register-button");
+        for (var i = 0; i < registerButtons.length; i++) {
+          registerButtons.item(i).href = `https://my.piknik.cc/register?email=${email}`;
+        }
+      }
     </script>
   </div>
 </body>
