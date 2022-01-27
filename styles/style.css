@@ -231,6 +231,14 @@ body {
   margin-right: 8px;
 }
 
+.integrations div {
+  justify-content: center;
+}
+
+.integrations img {
+  height: 48px;
+}
+
 .footer {
   background-color: #15181b;
 }
@@ -272,6 +280,17 @@ select#lang-picker option {
 @media (max-width: 992px) {
   .navbar-collapse {
     margin-top: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .integrations div {
+    justify-content: start;
+    margin-left: 15px;
+  }
+
+  .integrations div:not(:last-of-type) img {
+    margin-bottom: 32px;
   }
 }
 
