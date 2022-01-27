@@ -284,9 +284,12 @@ select#lang-picker option {
 }
 
 @media (max-width: 768px) {
+  .integrations {
+    padding-left: 15px;
+  }
+
   .integrations div {
     justify-content: start;
-    margin-left: 15px;
   }
 
   .integrations div:not(:last-of-type) img {
