@@ -9,13 +9,15 @@
   <meta name="facebook-domain-verification" content="t66moan04xew5e6wea7holxi007w3n" />
 
   <script>
-    const browserLanguage = window.navigator.language
-    let language = "en"
-    if (/^sk\b/.test(browserLanguage)) language = "sk"
-    else if (/^cs\b/.test(browserLanguage)) language = "cs"
+    if (!/bot|google|baidu|bing|msn|teoma|slurp|yandex/i.test(navigator.userAgent)) {
+      const browserLanguage = window.navigator.language
+      let language = "en"
+      if (/^sk\b/.test(browserLanguage)) language = "sk"
+      else if (/^cs\b/.test(browserLanguage)) language = "cs"
 
-    if (language === "en") location = "/en"
-    if (language === "cs") location = "/cs"
+      if (language === "en") location = "/en"
+      if (language === "cs") location = "/cs"
+    }
   </script>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
