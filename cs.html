@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Online objednávkový systém pro restaurace</title>
-  <meta name="description" content="Přijímejte objednávky přímo z vaší webové stránky. Jednoduše. Bez investic." />
+  <meta name="description"
+    content="Umožněte zákazníkům objednávat napřímo, z vašeho webu, apky a sociálních sítí. Jednoduše a bez investic." />
   <meta name="facebook-domain-verification" content="t66moan04xew5e6wea7holxi007w3n" />
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -75,7 +76,7 @@
               <a class="nav-link" href="#prehled">Přehled</a>
             </li>
             <li class="nav-item animate-nav">
-              <a class="nav-link" href="#funkce">Funkce</a>
+              <a class="nav-link" href="#proc-piknik">Proč Piknik?</a>
             </li>
             <li class="nav-item animate-nav">
               <a class="nav-link" href="#ceny">Ceny</a>
@@ -95,6 +96,13 @@
               <a class="nav-link" href="https://my.piknik.cc" target="_blank" rel="noopener"
                 onclick="gtag('event', 'dashboard_link_click');">Přihlásit se</a>
             </li>
+            <li class="d-sm-none nav-item animate-nav">
+              <select class="nav-link lang-picker" id="lang-picker-1">
+                <option id="sk" value="/sk">SK</option>
+                <option id="cs" value="/cs" selected="selected">CS</option>
+                <option id="en" value="/en">EN</option>
+              </select>
+            </li>
           </ul>
         </div>
       </nav>
@@ -102,13 +110,14 @@
       <div class="jumbotron">
         <div id="prehled" class="animate-hero-text">
           <h1 class="display-4 hero-heading" id="hero-heading">
-            Přijímejte objednávky přímo<br>z vašeho webu
+            Pomáháme restauracím s online prezentací a prodejem
           </h1>
         </div>
         <div class="animate-hero-text">
           <p class="lead opacity-06 mb-0">
-            Posuňte svou restauraci v online světě. Jednoduše. Bez investic.
+            Umožněte zákazníkům objednávat napřímo, z vašeho webu, apky a sociálních sítí.
           </p>
+          <p class="d-none d-sm-block lead opacity-06 mb-0">Jednoduše a bez investic.</p>
         </div>
         <div class="custom-input-group mt-4 mb-5 animate-hero-text">
           <input id="email-input" class="custom-input" type="email" placeholder="E-mailová adresa"
@@ -133,9 +142,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Zákazník zůstává u vás</h5>
+                <h5 class="card-title">Budete blíže k vašim zákazníkům</h5>
                 <p class="card-text opacity-06">
-                  Získejte nezávislost na velkých portálech a budujte svou značku.
+                  Získejte nezávislost na velkých portálech a budujte vlastní značku.
                 </p>
               </div>
             </div>
@@ -151,9 +160,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Platíte jen když prodáváte</h5>
+                <h5 class="card-title">Vytvoříte moderní image restaurace</h5>
                 <p class="card-text opacity-06">
-                  Nízká provize z každé potvrzené objednávky.
+                  Oslovte zákazníky designovým webem a apkou s možností objednání online.
                 </p>
               </div>
             </div>
@@ -169,9 +178,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Šetříte na IT nákladech</h5>
+                <h5 class="card-title">Zefektivněte přijímání objednávek</h5>
                 <p class="card-text opacity-06">
-                  Software nechte na nás. Snažíme se neustále zlepšovat a přinášet nové možnosti.
+                  Eliminujte čas strávený telefonováním a zapisováním objednávky.
                 </p>
               </div>
             </div>
@@ -207,12 +216,12 @@
 
     <div class="container">
       <div class="jumbotron features">
-        <div id="funkce">
-          <h1 class="display-4 hero-heading">Máme to všechno...</h1>
+        <div id="proc-piknik">
+          <h1 class="display-4 hero-heading">Proč Piknik?</h1>
         </div>
         <div>
           <p class="lead opacity-06 mb-5">
-            Vše co jako moderní restaurace potřebujete.
+            Máme vše co jako moderní restaurace potřebujete.
           </p>
         </div>
         <div class="card-deck">
@@ -227,9 +236,27 @@
                 </svg>
               </div>
               <div>
+                <h5 class="card-title">Moderní design</h5>
+                <p class="card-text opacity-06">
+                  Pohodlné objednávání pro zákazníky, ať už z počítače nebo chytrého telefonu.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="icon-wrapper">
+                <svg style="fill: #007afc" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
+                  width="24">
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.88-11.71L10 14.17l-1.88-1.88c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7c.39-.39.39-1.02 0-1.41-.39-.39-1.03-.39-1.42 0z" />
+                </svg>
+              </div>
+              <div>
                 <h5 class="card-title">Online platby</h5>
                 <p class="card-text opacity-06">
-                  Umožněte zákazníkům platit pohodlně online kartou.
+                  Zákazníci mohou zaplatit online kartou nebo pomocí Apple Pay a Google Pay.
                 </p>
               </div>
             </div>
@@ -245,27 +272,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Denní menu</h5>
+                <h5 class="card-title">Vlastní mobilní apka</h5>
                 <p class="card-text opacity-06">
-                  Podporujeme objednávání denního menu v předem určených dnech a časech.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <div class="icon-wrapper">
-                <svg style="fill: #007afc" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
-                  width="24">
-                  <path d="M0 0h24v24H0V0z" fill="none" />
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.88-11.71L10 14.17l-1.88-1.88c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7c.39-.39.39-1.02 0-1.41-.39-.39-1.03-.39-1.42 0z" />
-                </svg>
-              </div>
-              <div>
-                <h5 class="card-title">Pokročilé možnosti jídel</h5>
-                <p class="card-text opacity-06">
-                  Vytvořte nabídku jídel bez omezení, přesně tak, jak potřebujete.
+                  Vytvořte moderní image restaurace díky mobilní web apke.
                 </p>
               </div>
             </div>
@@ -283,9 +292,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Donáška / take-away / u stolu</h5>
+                <h5 class="card-title">Věrnostní program</h5>
                 <p class="card-text opacity-06">
-                  Nově už i bezkontaktní stolování načtením QR kódu.
+                  Motivujte zákazníky, aby si od Vás objednávali častěji a pravidelněji.
                 </p>
               </div>
             </div>
@@ -301,9 +310,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Donáškové zóny</h5>
+                <h5 class="card-title">Donáška, vyzvednutí, u stolu</h5>
                 <p class="card-text opacity-06">
-                  Rozdílné ceny donášky? Na pár kliků.
+                  Nově už i objednávání načtením QR kódu na stole.
                 </p>
               </div>
             </div>
@@ -319,10 +328,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Přístup 24/7</h5>
+                <h5 class="card-title">Široké možnosti přizpůsobení</h5>
                 <p class="card-text opacity-06">
-                  Přidání nového jídla o půl noci? ☑<br />
-                  Žádné zbytečné schvalování...
+                  Piknik si umíte vždy přizpůsobit přesně tak, jak potřebujete.
                 </p>
               </div>
             </div>
@@ -478,7 +486,7 @@
           <div style="float: right">
             <a class="opacity-06 agreements-link" href="/vop">Obchodní podmínky</a>
             <span class="opacity-06 ml-4">© 2022 Piknik</span>
-            <select class="ml-4" id="lang-picker">
+            <select class="ml-4 lang-picker" id="lang-picker-2">
               <option id="sk" value="/sk">SK</option>
               <option id="cs" value="/cs" selected="selected">CS</option>
               <option id="en" value="/en">EN</option>
@@ -487,6 +495,8 @@
         </div>
       </div>
     </div>
+
+    <div id="whatsapp"></div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -582,9 +592,15 @@
     </script>
 
     <script src="js/slider.js"></script>
+    <script type="text/javascript" src="/js/venom-button.min.js"></script>
+    <link rel="stylesheet" href="/styles/venom-button.min.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
     <script>
-      document.getElementById("lang-picker").addEventListener("change", function () {
+      document.getElementById("lang-picker-1").addEventListener("change", function () {
+        location = this.value;
+      });
+      document.getElementById("lang-picker-2").addEventListener("change", function () {
         location = this.value;
       });
 
@@ -595,6 +611,44 @@
           registerButtons.item(i).href = `https://my.piknik.cc/register?email=${email}`;
         }
       }
+
+      $('#whatsapp').venomButton({
+        phone: '+421950466441',
+        avatar: "./images/whatsapp/avatar.png",
+        buttonImage: "./images/whatsapp/icon.svg",
+        nameClient: 'Piknik',
+        headerTitle: 'Odpovídá obvykle do hodiny',
+        chatMessage: 'Dobrý den 👋<br>Jak vám můžu pomoci?',
+        placeholder: 'Vaše zpráva',
+        showPopup: true,
+        position: 'right',
+        size: '64px',
+        buttonColor: '#25D366',
+      });
+
+      const heroHeading = document.getElementById('hero-heading')
+
+      const typewriter = new Typewriter(heroHeading, {
+        loop: true,
+        deleteSpeed: 25
+      });
+
+      typewriter
+        .typeString('s online prezentací a prodejem')
+        .pauseFor(2500)
+        .deleteChars(30)
+        .typeString('propagovat vlastní značku')
+        .pauseFor(2500)
+        .deleteChars(25)
+        .typeString('budovat stálý okruh zákazníků')
+        .pauseFor(2500)
+        .deleteChars(29)
+        .typeString('vytvářet příjemný zážitek pro zákazníky')
+        .pauseFor(2500)
+        .deleteAll()
+        .start();
+
+      heroHeading.getElementsByClassName("Typewriter__wrapper")[0].innerHTML = "Pomáháme restauracím "
     </script>
   </div>
 </body>

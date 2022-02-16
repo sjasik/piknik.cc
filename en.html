@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Online ordering system for restaurants</title>
-  <meta name="description" content="Accept orders directly from your website. No headaches. No investments." />
+  <meta name="description"
+    content="Allow customers to order directly, from your website, app and social networks. No headaches. No investments." />
   <meta name="facebook-domain-verification" content="t66moan04xew5e6wea7holxi007w3n" />
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -75,7 +76,7 @@
               <a class="nav-link" href="#overview">Overview</a>
             </li>
             <li class="nav-item animate-nav">
-              <a class="nav-link" href="#features">Features</a>
+              <a class="nav-link" href="#why-piknik">Why Piknik?</a>
             </li>
             <li class="nav-item animate-nav">
               <a class="nav-link" href="#pricing">Pricing</a>
@@ -95,6 +96,13 @@
               <a class="nav-link" href="https://my.piknik.cc" target="_blank" rel="noopener"
                 onclick="gtag('event', 'dashboard_link_click');">Log in</a>
             </li>
+            <li class="d-sm-none nav-item animate-nav">
+              <select class="nav-link lang-picker" id="lang-picker-1">
+                <option id="sk" value="/sk">SK</option>
+                <option id="cs" value="/cs">CS</option>
+                <option id="en" value="/en" selected="selected">EN</option>
+              </select>
+            </li>
           </ul>
         </div>
       </nav>
@@ -102,13 +110,14 @@
       <div class="jumbotron">
         <div id="overview" class="animate-hero-text">
           <h1 class="display-4 hero-heading" id="hero-heading">
-            Accept orders directly<br> from your website
+            We help restaurants with online presence and sales
           </h1>
         </div>
         <div class="animate-hero-text">
           <p class="lead opacity-06 mb-0">
-            Make your restaurant shine in online world. No headaches. No investments.
+            Allow customers to order directly, from your website, app and social networks.
           </p>
+          <p class="d-none d-sm-block lead opacity-06 mb-0">No headaches. No investments.</p>
         </div>
         <div class="custom-input-group mt-4 mb-5 animate-hero-text">
           <input id="email-input" class="custom-input" type="email" placeholder="E-mail address"
@@ -133,7 +142,7 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Your customer stays with you</h5>
+                <h5 class="card-title">Be closer to your customers</h5>
                 <p class="card-text opacity-06">
                   Gain independence from big delivery sites and build your brand.
                 </p>
@@ -151,9 +160,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Pay only when you sell</h5>
+                <h5 class="card-title">Create a modern image of your restaurant</h5>
                 <p class="card-text opacity-06">
-                  Low commission from each confirmed order.
+                  Impress your customers with beautifully designed website and app.
                 </p>
               </div>
             </div>
@@ -169,9 +178,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Save big on IT costs</h5>
+                <h5 class="card-title">Make receiving orders more efficient</h5>
                 <p class="card-text opacity-06">
-                  Leave the software to us. We are constantly striving to improve and bring new features.
+                  Eliminate time spent on calling and writing down orders.
                 </p>
               </div>
             </div>
@@ -207,12 +216,12 @@
 
     <div class="container">
       <div class="jumbotron features">
-        <div id="features">
-          <h1 class="display-4 hero-heading">We have it all...</h1>
+        <div id="why-piknik">
+          <h1 class="display-4 hero-heading">Why Piknik?</h1>
         </div>
         <div>
           <p class="lead opacity-06 mb-5">
-            Everything you need as a modern restaurant.
+            We got everything you need as a modern restaurant.
           </p>
         </div>
         <div class="card-deck">
@@ -227,9 +236,27 @@
                 </svg>
               </div>
               <div>
+                <h5 class="card-title">Modern desing</h5>
+                <p class="card-text opacity-06">
+                  Convenient ordering for customers, whether from a computer or smartphone.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="icon-wrapper">
+                <svg style="fill: #007afc" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
+                  width="24">
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.88-11.71L10 14.17l-1.88-1.88c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7c.39-.39.39-1.02 0-1.41-.39-.39-1.03-.39-1.42 0z" />
+                </svg>
+              </div>
+              <div>
                 <h5 class="card-title">Online payments</h5>
                 <p class="card-text opacity-06">
-                  Allow customers to pay conveniently online by card.
+                  Customers can pay online by card or using Apple Pay and Google Pay.
                 </p>
               </div>
             </div>
@@ -245,27 +272,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Daily menu</h5>
+                <h5 class="card-title">Own mobile app</h5>
                 <p class="card-text opacity-06">
-                  We support ordering a daily menu on predetermined days and times.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <div class="icon-wrapper">
-                <svg style="fill: #007afc" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
-                  width="24">
-                  <path d="M0 0h24v24H0V0z" fill="none" />
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.88-11.71L10 14.17l-1.88-1.88c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7c.39-.39.39-1.02 0-1.41-.39-.39-1.03-.39-1.42 0z" />
-                </svg>
-              </div>
-              <div>
-                <h5 class="card-title">Advanced food options</h5>
-                <p class="card-text opacity-06">
-                  Create food menus exactly as you need.
+                  Create a modern image of your restaurant with the mobile web app.
                 </p>
               </div>
             </div>
@@ -283,9 +292,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Delivery / take-away / dine-in</h5>
+                <h5 class="card-title">Loyalty program</h5>
                 <p class="card-text opacity-06">
-                  New contactless dining by reading the QR code.
+                  Motivate customers to order from you more often and more regularly.
                 </p>
               </div>
             </div>
@@ -301,9 +310,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Delivery zones</h5>
+                <h5 class="card-title">Delivery, pickup, dine-in</h5>
                 <p class="card-text opacity-06">
-                  Different delivery prices? Done in a few clicks.
+                  Ordeing by scanning QR code at the table is available as well.
                 </p>
               </div>
             </div>
@@ -319,10 +328,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="card-title">Access 24/7</h5>
+                <h5 class="card-title">Wide range of customization</h5>
                 <p class="card-text opacity-06">
-                  Adding a new meal at midnight? ☑<br />
-                  No unnecessary approval ...
+                  You can always customize Piknik exactly as you need it.
                 </p>
               </div>
             </div>
@@ -479,7 +487,7 @@
           <div style="float: right">
             <a class="opacity-06 agreements-link" href="/vop">Business conditions</a>
             <span class="opacity-06 ml-4">© 2022 Piknik</span>
-            <select class="ml-4" id="lang-picker">
+            <select class="ml-4 lang-picker" id="lang-picker-2">
               <option id="sk" value="/sk">SK</option>
               <option id="cs" value="/cs">CS</option>
               <option id="en" value="/en" selected="selected">EN</option>
@@ -488,6 +496,8 @@
         </div>
       </div>
     </div>
+
+    <div id="whatsapp"></div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -583,9 +593,15 @@
     </script>
 
     <script src="js/slider.js"></script>
+    <script type="text/javascript" src="/js/venom-button.min.js"></script>
+    <link rel="stylesheet" href="/styles/venom-button.min.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
     <script>
-      document.getElementById("lang-picker").addEventListener("change", function () {
+      document.getElementById("lang-picker-1").addEventListener("change", function () {
+        location = this.value;
+      });
+      document.getElementById("lang-picker-2").addEventListener("change", function () {
         location = this.value;
       });
 
@@ -596,6 +612,44 @@
           registerButtons.item(i).href = `https://my.piknik.cc/register?email=${email}`;
         }
       }
+
+      $('#whatsapp').venomButton({
+        phone: '+421950466441',
+        avatar: "./images/whatsapp/avatar.png",
+        buttonImage: "./images/whatsapp/icon.svg",
+        nameClient: 'Piknik',
+        headerTitle: 'Usually replies within the hour',
+        chatMessage: 'Hello 👋<br>How can I help you?',
+        placeholder: 'Your message',
+        showPopup: true,
+        position: 'right',
+        size: '64px',
+        buttonColor: '#25D366',
+      });
+
+      const heroHeading = document.getElementById('hero-heading')
+
+      const typewriter = new Typewriter(heroHeading, {
+        loop: true,
+        deleteSpeed: 25
+      });
+
+      typewriter
+        .typeString('with online presence and sales')
+        .pauseFor(2500)
+        .deleteChars(30)
+        .typeString('promote their own brand')
+        .pauseFor(2500)
+        .deleteChars(23)
+        .typeString('build loyal customer base')
+        .pauseFor(2500)
+        .deleteChars(25)
+        .typeString('delight their customers with a seamless experience')
+        .pauseFor(2500)
+        .deleteAll()
+        .start();
+
+      heroHeading.getElementsByClassName("Typewriter__wrapper")[0].innerHTML = "We help restaurants "
     </script>
   </div>
 </body>

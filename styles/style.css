@@ -267,13 +267,14 @@ body {
   display: none;
 }
 
-select#lang-picker {
+select.lang-picker {
   background: none;
   color: white;
   border: none;
+  outline: none;
 }
 
-select#lang-picker option {
+select.lang-picker option {
   color: #0e1012;
 }
 
