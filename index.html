@@ -12,12 +12,13 @@
   <script>
     if (!/bot|google|baidu|bing|msn|teoma|slurp|yandex/i.test(navigator.userAgent)) {
       const browserLanguage = window.navigator.language
+      const searchString = window.location.search
       let language = "en"
       if (/^sk\b/.test(browserLanguage)) language = "sk"
       else if (/^cs\b/.test(browserLanguage)) language = "cs"
 
-      if (language === "en") location = "/en"
-      if (language === "cs") location = "/cs"
+      if (language === "en") location = `/en${searchString}`
+      if (language === "cs") location = `/cs${searchString}`
     }
   </script>
 
@@ -624,10 +625,12 @@
 
     <script>
       document.getElementById("lang-picker-1").addEventListener("change", function () {
-        location = this.value;
+        const searchString = window.location.search
+        location = `${this.value}${searchString}`;
       });
       document.getElementById("lang-picker-2").addEventListener("change", function () {
-        location = this.value;
+        const searchString = window.location.search
+        location = `${this.value}${searchString}`;
       });
 
       window.onload = () => {

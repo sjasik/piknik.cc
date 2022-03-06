@@ -612,10 +612,12 @@
 
     <script>
       document.getElementById("lang-picker-1").addEventListener("change", function () {
-        location = this.value;
+        const searchString = window.location.search
+        location = `${this.value}${searchString}`;
       });
       document.getElementById("lang-picker-2").addEventListener("change", function () {
-        location = this.value;
+        const searchString = window.location.search
+        location = `${this.value}${searchString}`;
       });
 
       window.onload = () => {
