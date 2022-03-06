@@ -192,15 +192,18 @@
     <div class="container-fluid showcase-wrapper d-none d-md-block">
       <div class="row justify-content-center">
         <div class="col-lg-5 col-md-9">
-          <img class="img-fluid safari animate-showcase" src="https://cdn.jsdelivr.net/gh/sjasik/piknik.cc@latest/images/showcase/dashboard.gif"
+          <img class="img-fluid safari animate-showcase"
+            src="https://cdn.jsdelivr.net/gh/sjasik/piknik.cc@latest/images/showcase/dashboard.gif"
             alt="Ovládací panel pro správu restaurace" />
         </div>
         <div class="col-lg-2 col-md-3">
-          <img class="img-fluid safari2 animate-showcase" src="https://cdn.jsdelivr.net/gh/sjasik/piknik.cc@latest/images/showcase/iphone.gif"
+          <img class="img-fluid safari2 animate-showcase"
+            src="https://cdn.jsdelivr.net/gh/sjasik/piknik.cc@latest/images/showcase/iphone.gif"
             alt="UI online objednávání na mobilním zařízení" />
         </div>
         <div class="col-lg-5 d-none d-lg-block">
-          <img class="img-fluid safari3 animate-showcase" src="https://cdn.jsdelivr.net/gh/sjasik/piknik.cc@latest/images/showcase/desktop.png"
+          <img class="img-fluid safari3 animate-showcase"
+            src="https://cdn.jsdelivr.net/gh/sjasik/piknik.cc@latest/images/showcase/desktop.png"
             alt="UI online objednávání na desktop zařízení" />
         </div>
       </div>
@@ -209,7 +212,9 @@
     <div class="container showcase-wrapper d-md-none">
       <div class="row justify-content-center">
         <div class="col-9">
-          <img class="img-fluid safari2" src="https://cdn.jsdelivr.net/gh/sjasik/piknik.cc@latest/images/showcase/iphone.gif" alt="Ukázka online objednávání" />
+          <img class="img-fluid safari2"
+            src="https://cdn.jsdelivr.net/gh/sjasik/piknik.cc@latest/images/showcase/iphone.gif"
+            alt="Ukázka online objednávání" />
         </div>
       </div>
     </div>
@@ -477,8 +482,9 @@
             </div>
           </div>
           <div class="mb-5">
-            <a class="custom-button" href="https://my.piknik.cc/register" target="_blank" rel="noopener" role="button"
-              onclick="fbq('track', 'Lead'); gtag('event', 'registration_cta_button_click');">Vyzkoušet zdarma
+            <a class="custom-button register-button" href="https://my.piknik.cc/register" target="_blank" rel="noopener"
+              role="button" onclick="fbq('track', 'Lead'); gtag('event', 'registration_cta_button_click');">Vyzkoušet
+              zdarma
               <span>></span><span>></span></a>
           </div>
           <a class="opacity-06 agreements-link-mobile mb-5" href="/vop">Obchodní podmínky</a>
@@ -604,11 +610,20 @@
         location = this.value;
       });
 
+      window.onload = () => {
+        const registerButtons = document.getElementsByClassName("register-button");
+        const searchString = window.location.search
+        for (var i = 0; i < registerButtons.length; i++) {
+          registerButtons.item(i).href = searchString ? `https://my.piknik.cc/register${searchString}` : `https://my.piknik.cc/register`;
+        }
+      }
+
       const updateRegisterButtonHref = () => {
         const email = document.getElementById("email-input").value.trim();
         const registerButtons = document.getElementsByClassName("register-button");
+        const searchString = window.location.search
         for (var i = 0; i < registerButtons.length; i++) {
-          registerButtons.item(i).href = `https://my.piknik.cc/register?email=${email}`;
+          registerButtons.item(i).href = searchString ? `https://my.piknik.cc/register${searchString}&email=${email}` : `https://my.piknik.cc/register?email=${email}`;;
         }
       }
 
