@@ -8,7 +8,18 @@ html {
 }
 
 .freeprivacypolicy-com---palette-dark.freeprivacypolicy-com---nb {
-  background-color: #0e1012;
+  background-color: #0e1012 !important;
+}
+
+.cc-nb-main-container {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+@media (max-width: 576px) {
+  .cc-nb-main-container {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
 }
 
 .freeprivacypolicy-com---palette-dark .cc-nb-okagree {
@@ -21,8 +32,9 @@ html {
   color: #111 !important;
 }
 
-.cc-nb-main-container {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+.freeprivacypolicy-com---palette-dark .cc-cp-foot-save {
+  background: #007bff !important;
+  color: #fff !important;
 }
 
 .opacity-06 {
