@@ -7,6 +7,24 @@ html {
   scroll-behavior: smooth;
 }
 
+.freeprivacypolicy-com---palette-dark.freeprivacypolicy-com---nb {
+  background-color: #0e1012;
+}
+
+.freeprivacypolicy-com---palette-dark .cc-nb-okagree {
+  color: #fff !important;
+  background-color: #007bff !important;
+}
+
+.freeprivacypolicy-com---palette-dark .cc-nb-reject {
+  background-color: #eaeaea !important;
+  color: #111 !important;
+}
+
+.cc-nb-main-container {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
 .opacity-06 {
   opacity: 0.6 !important;
 }
@@ -230,6 +248,129 @@ body {
   opacity: 1 !important;
   margin-right: 8px;
 }
+
+/* start */
+.pricing .table-dark {
+  background-color: transparent;
+}
+
+.pricing .table thead th {
+  border-top: none;
+}
+
+.pricing .table tbody th {
+  font-weight: 400;
+}
+
+.pricing .table th.highlight,
+.pricing .table td.highlight {
+  background-color: rgba(0, 122, 252, 0.25);
+}
+
+.pricing .table th.highlight {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.pricing .table tbody tr:last-child .highlight {
+  border-radius: 0 0 1rem 1rem;
+}
+
+.pricing .table tbody tr:last-child {
+  text-align: center;
+}
+
+.pricing table .select-months {
+  position: absolute;
+  top: 12px;
+}
+
+.pricing .select-months select {
+  color: var(--orange-color);
+  font-weight: 700;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.pricing .select-months select option {
+  color: var(--grey-dark-color);
+}
+
+.pricing .tier-name {
+  font-weight: 700;
+}
+
+.pricing .tier-price,
+.pricing .tier-price a {
+  white-space: nowrap;
+  color: var(--orange-color);
+  font-weight: 900;
+}
+
+.pricing .tier-monthly-price {
+  font-weight: 400;
+}
+
+@media (max-width: 576px) {
+  .table-responsive {
+    overflow-x: unset;
+  }
+
+  .pricing table .select-months {
+    position: unset;
+    top: unset;
+  }
+
+  .pricing .table thead {
+    position: sticky;
+    top: 0;
+    background-color: white;
+  }
+
+  .pricing .table thead th {
+    width: 25%;
+    background-color: unset;
+  }
+
+  .pricing .tier-name {
+    font-size: 1rem;
+  }
+
+  .pricing .tier-price {
+    font-size: 1.25rem;
+  }
+
+  .pricing .tier-monthly-price {
+    font-size: 0.75rem;
+  }
+
+  .pricing .table tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .pricing .table th {
+    width: 100%;
+    background-color: var(--grey-light-color);
+  }
+
+  .pricing .table td {
+    width: 25%;
+    text-align: center;
+    /* border-top: none; */
+  }
+
+  .pricing .table tbody tr:last-of-type {
+    display: none;
+  }
+
+  .pricing .table th.highlight,
+  .pricing .table td.highlight {
+    background-color: unset;
+    border-radius: none;
+  }
+}
+/* end */
 
 .integrations div {
   justify-content: center;
