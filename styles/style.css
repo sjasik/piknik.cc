@@ -264,48 +264,44 @@ body {
 /* start */
 .pricing .table-dark {
   background-color: transparent;
+  text-align: left;
 }
 
 .pricing .table thead th {
   border-top: none;
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .pricing .table tbody th {
   font-weight: 400;
+  text-align: left;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.pricing .table tbody td {
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .pricing .table th.highlight,
 .pricing .table td.highlight {
   background-color: rgba(0, 122, 252, 0.25);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .pricing .table th.highlight {
   border-radius: 1rem 1rem 0 0;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .pricing .table tbody tr:last-child .highlight {
   border-radius: 0 0 1rem 1rem;
 }
 
-.pricing .table tbody tr:last-child {
-  text-align: center;
-}
-
-.pricing table .select-months {
-  position: absolute;
-  top: 12px;
-}
-
-.pricing .select-months select {
-  color: var(--orange-color);
-  font-weight: 700;
-  background: none;
-  outline: none;
-  border: none;
-}
-
-.pricing .select-months select option {
-  color: var(--grey-dark-color);
+.pricing .table tbody tr:first-of-type th {
+  border-top: none;
 }
 
 .pricing .tier-name {
@@ -315,11 +311,11 @@ body {
 .pricing .tier-price,
 .pricing .tier-price a {
   white-space: nowrap;
-  color: var(--orange-color);
+  color: #007bff;
   font-weight: 900;
 }
 
-.pricing .tier-monthly-price {
+.pricing .tier-daily-price {
   font-weight: 400;
 }
 
@@ -328,20 +324,21 @@ body {
     overflow-x: unset;
   }
 
-  .pricing table .select-months {
-    position: unset;
-    top: unset;
-  }
-
   .pricing .table thead {
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: #0e1012;
   }
 
   .pricing .table thead th {
-    width: 25%;
+    width: 33%;
     background-color: unset;
+    text-align: center;
+  }
+
+  .pricing .table th.highlight,
+  .pricing .table td.highlight {
+    padding: 0.75rem;
   }
 
   .pricing .tier-name {
@@ -349,10 +346,10 @@ body {
   }
 
   .pricing .tier-price {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
   }
 
-  .pricing .tier-monthly-price {
+  .pricing .tier-daily-price {
     font-size: 0.75rem;
   }
 
@@ -366,14 +363,14 @@ body {
     background-color: var(--grey-light-color);
   }
 
-  .pricing .table td {
-    width: 25%;
+  .pricing .table tbody th {
+    background-color: rgba(0, 122, 252, 0.05);
     text-align: center;
-    /* border-top: none; */
   }
 
-  .pricing .table tbody tr:last-of-type {
-    display: none;
+  .pricing .table td {
+    width: 33%;
+    text-align: center;
   }
 
   .pricing .table th.highlight,
